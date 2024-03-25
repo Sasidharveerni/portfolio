@@ -59,7 +59,7 @@ form.addEventListener('submit', (e) => {
   // Convert to URL-encoded string:
   const urlEncoded = new URLSearchParams(fd).toString();
   
-  fetch('http://localhost:3000', {
+  fetch('https://portfolio-eta-ten-42.vercel.app/', {
     method: "POST",
     body: urlEncoded, // just 'fd' for multipart/form-data
     headers: {
