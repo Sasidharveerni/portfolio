@@ -61,7 +61,6 @@ form.addEventListener('submit', (e) => {
   
   fetch('https://portfolio-eta-ten-42.vercel.app/', {
     method: "POST",
-    mode: 'no-cors',
     body: urlEncoded, // just 'fd' for multipart/form-data
     headers: {
       'Content-type': 'application/x-www-form-urlencoded'
