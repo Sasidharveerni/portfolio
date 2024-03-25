@@ -10,6 +10,9 @@ app.use(cors({
 // Middleware to parse URL-encoded form data
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
 
 
 app.post('/', (req, res) => {
@@ -21,7 +24,7 @@ app.post('/', (req, res) => {
         // Process the FormData object here
       }
     
-      // res.send('Form data received!');
+      res.send('Form data received!');
 });
 
 app.listen(port, () => {
