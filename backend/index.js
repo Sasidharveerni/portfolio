@@ -3,10 +3,14 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-app.use(cors()); // Enable CORS
+app.use(cors({
+  origin: 'https://portfolio-472i.vercel.app'
+}));
 
 // Middleware to parse URL-encoded form data
 app.use(express.urlencoded({ extended: true }));
+
+
 
 app.post('/', (req, res) => {
     if (req.is('application/x-www-form-urlencoded')) {
