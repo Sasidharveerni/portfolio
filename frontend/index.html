@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="container pt-4">
+    <div class="container pt-4" id="home">
     <!-- 
         <div class="container pt-4">
 
@@ -55,19 +55,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="#myForm">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -89,18 +89,16 @@
                     <img src="images/Sasidhar.jpg" width="250px" height="300px"
                         style="opacity: 0.4; border-radius: 20px;">
                 </div>
-
             </div>
         </div>
 
-
-        <div class="desc">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, officia? <br>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-                Vitae consequatur quia magnam rerum ipsa dolorem animi autem.<br>
-            </p>
-        </div>
+        <div class="desc" id="about">
+        <p>
+            I am a recent graduate with a Bachelor of Technology <br>
+            in Computer Science and Business Systems from <br> R.V.R & J.C. College Of Engineering. <br>
+            <!-- I have also worked on projects like Threads Clone and Zen Virtual Private Assistant, showcasing my skills in MongoDB, Python, RESTful APIs, and more. -->
+        </p>
+    </div>
 
         <div class="media">
             <div class="icons">
@@ -118,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="icons-2">
+            <div class="icons-2" id="skills">
                 <p>Best skill on</p>
                 <div class="logos-2">
                     <div>
@@ -134,41 +132,53 @@
             </div>
         </div>
 
-       <div class="section-2">
+       <div class="section-2" id="projects">
           
         <div class="card mb-3" style="background-color: #0d1013; color: #f4f5f6; border-color: #ff014f;;">
             <img src="images/threads_image.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Click here</p>
+              <h5 class="card-title">Threads Clone</h5>
+              <p class="card-text">In my Threads Clone project, I designed and implemented a full-stack website using the MERN (MongoDB, Express.js, React.js, Node.js) tech stack. 
+                This project allows users to create new accounts, post content with both text and images, like and comment on posts, and follow/unfollow other users. 
+                One of the key features of this project is the messaging functionality, enabling users to send messages to each other.</p>
+              <a class="card-text" href="https://threads-n7ib-31aemv0oj-sasidharveerni.vercel.app/auth" target="_blank">Click here</a>
             </div>
           </div>
 
           <div class="card mb-3" style="background-color: #0d1013; color: #f4f5f6; border-color: #ff014f;">
             <img src="images/Virtual Personal Assistant.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Click here</p>
+              <h5 class="card-title">Zen-Virtual Private Assistant</h5>
+              <p class="card-text">In my Zen project, I developed a virtual private assistant powered by Automatic Speech Recognition (ASR) technology. 
+                Zen facilitates voice-based interactions, assisting users with tasks such as scheduling appointments, managing reminders, and answering queries. Leveraging machine learning algorithms and natural language processing techniques, 
+                Zen accurately recognizes and interprets user commands, ensuring an intuitive and efficient user experience.</p>
+              <a class="card-text" href="" target="_blank">Click here</a>
             </div>
           </div>
 
           <div class="card mb-3" style="background-color: #0d1013; color: #f4f5f6; border-color: #ff014f;">
             <img src="images/e-commerce.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Click here</p>
+              <h5 class="card-title">RentStyle</h5>
+              <p class="card-text">In RentStyle, a full-stack application I developed as a personal project, 
+                users can rent clothes for various occasions. The platform includes features such as user authentication, search functionality, 
+                payment integration, and an intuitive user interface. I contributed to both front-end development using React and back-end development using Node.js, 
+                showcasing my ability to build scalable and user-friendly applications.</p>
+              <a class="card-text" href="" target="_blank">Click here</a>
             </div>
           </div>
           
           <div class="card mb-3" style="background-color: #0d1013; color: #f4f5f6; border-color: #ff014f;">
             <img src="images/weather-forecast.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Click here</p>
+              <h5 class="card-title">Weather fetcher</h5>
+              <p class="card-text">
+                In my weather project, I created a web application that provides weather information based on user input. 
+                The application allows users to enter a location and retrieve current weather conditions, including temperature, humidity, and wind speed. I implemented this project using HTML, CSS, and JavaScript, 
+                demonstrating my proficiency in front-end development. 
+                For the backend of my weather project, I utilized Node.js and Express.js to handle server-side logic and API requests. 
+                Additionally, I integrated the OpenWeatherMap API to retrieve weather data based on user inputs. </p>
+              <a class="card-text" href="https://weather-project-gold.vercel.app/" target="_blank">Click here</a>
             </div>
           </div>
 
